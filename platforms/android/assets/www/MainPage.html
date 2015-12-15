@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>jQM Complex Demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densityDpi=device-dpi"/>
+    <link rel="stylesheet" href="css/themes/my-theme.min.css" />
+    
+    <!-- css for icons -->
+    <link rel="stylesheet" href="css/themes/jquery.mobile.icons.min.css" />
+    
+    <!-- jqm structure css -->
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.3/jquery.mobile.structure-1.4.3.min.css" />
+    
+    <!-- jquery files -->
+   <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script> 
+   <script src="http://code.jquery.com/mobile/1.4.3/jquery.mobile-1.4.3.min.js"></script>
+    <script src="js/main.js"></script>
+      
+</head>
+<body>
+    <div data-role="page" id="index">
+        <div data-theme="a" data-role="header">
+            <h3>
+                First Page
+            </h3>
+              <ul id="servicesList">
+                <li data-value="1">
+                    <input type='text' data-mini="true" class='input-mini' id='price' value='2500'>
+                    <i id='icon-minus' class='icon-minus-sign'>x</i>
+                </li>
+             <li data-value="2">
+                    <input type='text' class='input-mini' id='price' value='1212'>
+                    <i id='icon-minus' class='icon-minus-sign'>x</i>
+            </li>
+        </ul>
+            <a href="#second" class="ui-btn-right">Next</a>
+        </div>
+
+        <div data-role="content">
+
+        </div>
+
+        <div data-theme="a" data-role="footer" data-position="fixed">
+
+        </div>
+    </div>    
+</body>
+</html>   

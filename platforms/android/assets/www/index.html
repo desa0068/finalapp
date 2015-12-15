@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+    <head>
+        <!--
+        Customize this policy to fit your own app's needs. For more guidance, see:
+            https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
+        Some notes:
+            * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+            * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+            * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+                * Enable inline JS: add 'unsafe-inline' to default-src
+        -->
+
+        
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+
+         <link rel="stylesheet" href="css/themes/my-theme.min.css" />
+        <link rel="stylesheet" href="css/custom.css"/>
+       
+    <!-- css for icons -->
+    <link rel="stylesheet" href="css/themes/jquery.mobile.icons.min.css" />
+    
+    <!-- jqm structure css -->
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.3/jquery.mobile.structure-1.4.3.min.css" />
+    
+     <!--jquery files--> 
+<!--    <script type="text/javascript" src="cordova.js"></script>-->
+    <script type="text/javascript" src="js/index.js"></script>
+   <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script> 
+   <script src="http://code.jquery.com/mobile/1.4.3/jquery.mobile-1.4.3.min.js"></script>
+    <script src="js/main.js"></script>
+        
+        <title>Final Assignment</title>
+    </head>
+    <body>
+        <div data-role="page" id="index">
+            <!--Header-->
+               <div data-theme="a" data-role="header">
+                    <img border="0" src="img/icon.png" alt="Logo, GroceryApp" style="width:40px;height:40px;float:left;display:inline"/>
+               <h3>
+                    Grocery App
+                </h3>
+                  
+             </div>
+             
+             <!--Body-->
+             <div data-role="content" >
+                <ul data-role="listview" id="contributionList">
+                </ul>
+            </div>
+    
+           <!--Footer-->
+            <div data-role="footer" data-theme="b" data-position="fixed">
+                 <fieldset id="fieldset1" class="ui-grid-a">
+                   <div class="ui-block-a">
+                      <input type="text" placeholder="Add Item" id="contributionAmount" />
+                   </div>
+                   <div class="ui-block-b">
+                     <input type="button" value="Add" id="addContribution"/>
+                   </div>
+                </fieldset>
+            </div>
+        </div>
+    </body>
+</html>
