@@ -1,0 +1,14 @@
+#fieldset1
+{
+   padding-left:20px;
+}
+.ui-icon-list {
+  background: url(image/icon.png) 50% 50% no-repeat;
+  background-size: 38px 38px;
+  width: 30px;
+  height: 30px;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  margin: -2px !important;
+  margin-left:-15px!important;
+}
